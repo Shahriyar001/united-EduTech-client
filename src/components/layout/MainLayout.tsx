@@ -5,26 +5,26 @@ import {
   VideoCameraOutlined,
 } from "@ant-design/icons";
 import { createElement } from "react";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
 
 const items: MenuProps["items"] = [
   {
-    key: "1",
-    label: "DashBoard",
+    key: "Dashboard",
+    label: <NavLink to="/admin/dashboard">DashBoard</NavLink>,
   },
   {
-    key: "2",
-    label: "Board",
+    key: "User Management",
+    label: "User Management",
   },
   {
-    key: "3",
-    label: "Dash",
+    key: "Management",
+    label: "Management",
     children: [
       {
-        key: "4",
-        label: "Admin",
+        key: "Create Admin",
+        label: <NavLink to="/admin/create-admin">Create Admin</NavLink>,
       },
       {
         key: "5",
