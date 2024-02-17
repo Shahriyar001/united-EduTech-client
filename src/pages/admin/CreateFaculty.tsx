@@ -1,7 +1,7 @@
 const CreateFaculty = () => {
   return (
     <div>
-      <h1>Create admin</h1>
+      <h1>Create Faculty</h1>
     </div>
   );
 };
