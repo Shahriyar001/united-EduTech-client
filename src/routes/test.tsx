@@ -1,4 +1,4 @@
-const adminPaths2 = [
+const adminPaths = [
   {
     name: "Dashboard",
     path: "dashboard",
@@ -26,7 +26,7 @@ const adminPaths2 = [
   },
 ];
 
-const newArray = adminPaths2.reduce((acc, item) => {
+const newArray = adminPaths.reduce((acc, item) => {
   if (item.path && item.element) {
     acc.push({
       path: item.path,
